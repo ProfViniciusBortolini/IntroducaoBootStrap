@@ -1,0 +1,85 @@
+/* Resetando Margens e Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    background-color: rgb(194, 95, 196);
+    align-items: center;
+}
+
+/* Nav no Header */
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+/* Estilos do Banner */
+.banner img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Container */
+.container {
+    padding: 0; /* Removido o padding para evitar conflito com o Bootstrap */
+}
+
+/* Links dos Produtos */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* Efeito Hover */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do Produto */
+.product-image {
+    height: 200px; /* Altura fixa para imagens */
+    object-fit: contain;
+}
+
+/* Preço do Produto */
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E53935;
+    margin-bottom: 8px;
+}
+
+/* Parcelamento */
+.product-installments {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Preço à vista */
+.product-cash {
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Ajustes para Responsividade */
+@media (max-width: 576px) {
+    header {
+        padding: 10px;
+    }
+
+    header nav {
+        flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+        gap: 10px;
+    }
+}
